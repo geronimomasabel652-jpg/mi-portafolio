@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portafolio | Ana Lucía Pachón Claros</title>
+<style>
+:root{--lila:#a77bd4;--oscuro:#7545a5;--claro:#eee4fa;--fondo:#faf7ff;--texto:#40334e}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:'Segoe UI',sans-serif;background:var(--fondo);color:var(--texto);overflow-x:hidden}
+header{background:rgba(255,255,255,.96);padding:16px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;box-shadow:0 3px 15px #b99bd522}
+.logo{color:var(--oscuro);font-size:19px;font-weight:bold}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--texto);font-size:13px;font-weight:600;transition:.3s}
+nav a:hover{color:var(--oscuro)}
+.hero{min-height:85vh;padding:80px 8%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:radial-gradient(circle at 15% 20%,#e8d8fa 0,transparent 30%),radial-gradient(circle at 85% 80%,#e6d4f7 0,transparent 30%),linear-gradient(135deg,#faf7ff,#eee4fa)}
+.tag{background:white;color:var(--oscuro);padding:10px 22px;border-radius:30px;font-size:13px;margin-bottom:25px;box-shadow:0 4px 15px #a77bd422}
+.hero h1{font-size:clamp(36px,7vw,65px);color:var(--oscuro);margin-bottom:15px}
+.hero h2{font-size:clamp(18px,3vw,25px);font-weight:500;margin-bottom:20px}
+.hero p{max-width:600px;line-height:1.8;color:#665775}
+.btn{display:inline-block;background:var(--lila);color:white;padding:13px 27px;border-radius:30px;text-decoration:none;margin-top:28px;font-weight:bold;border:none;cursor:pointer;transition:.3s}
+.btn:hover{background:var(--oscuro);transform:translateY(-4px)}
+.decoracion{color:var(--lila);font-size:30px;margin-top:25px;animation:flotar 3s infinite ease-in-out}
+@keyframes flotar{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+section{padding:75px 8%;scroll-margin-top:75px}
+.section-title{text-align:center;color:var(--oscuro);font-size:30px;margin-bottom:12px}
+.section-subtitle{text-align:center;color:#887a95;margin-bottom:40px;font-size:14px}
+.contenedor{max-width:1050px;margin:auto}
+.card{background:white;border-radius:20px;padding:27px;box-shadow:0 6px 25px #a77bd415;transition:.3s;border:1px solid #eee5f8}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 30px #a77bd428}
+.sobre-mi{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.card h3{color:var(--oscuro);margin-bottom:14px}
+.card p{line-height:1.8;font-size:14px}
+.datos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dato{background:var(--claro);padding:13px;border-radius:12px;font-size:13px;overflow-wrap:anywhere}
+.dato strong{display:block;color:var(--oscuro);margin-bottom:5px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.icono{font-size:32px;margin-bottom:15px}
+.acordeon{margin-bottom:14px;background:white;border-radius:15px;box-shadow:0 4px 15px #a77bd415;overflow:hidden}
+.acordeon summary{cursor:pointer;padding:20px;color:var(--oscuro);font-weight:bold;list-style:none}
+.acordeon summary::after{content:"+";float:right;font-size:20px}
+.acordeon[open] summary::after{content:"−"}
+.acordeon .contenido{padding:0 20px 20px;line-height:1.8;font-size:14px}
+.frase{background:linear-gradient(135deg,#b58cdd,#8961bb);color:white;text-align:center;padding:55px 25px;border-radius:25px;font-size:21px;line-height:1.7}
+.frase small{display:block;font-size:13px;margin-top:15px;opacity:.85}
+footer{background:#704a99;color:white;padding:30px;text-align:center;line-height:1.8;font-size:13px}
+.animar{opacity:0;transform:translateY(25px);transition:.7s ease}
+.animar.visible{opacity:1;transform:translateY(0)}
+@media(max-width:750px){header{flex-direction:column;gap:13px}nav{justify-content:center;gap:12px}nav a{font-size:11px}.sobre-mi,.grid{grid-template-columns:1fr}.datos{grid-template-columns:1fr 1fr}section{padding:55px 6%}}
+@media(max-width:380px){.datos{grid-template-columns:1fr}nav{gap:9px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">✿ Ana Lucía</div>
+  <nav>
+    <a href="#inicio">Inicio</a><a href="#sobre-mi">Sobre mí</a><a href="#formacion">Formación</a>
+    <a href="#habilidades">Habilidades</a><a href="#logros">Logros</a><a href="#suenos">Mis sueños</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="tag">✧ MI PORTAFOLIO PERSONAL ✧</div>
+  <h1>¡Hola, soy Ana Lucía!</h1>
+  <h2>Un mundo de sueños por cumplir 💜</h2>
+  <p>Soy Ana Lucía Pachón Claros. Una joven alegre, creativa y llena de sueños, con muchas metas por alcanzar y un futuro que quiero construir con esfuerzo, dedicación y amor.</p>
+  <a href="#sobre-mi" class="btn">Conoce mi historia ✨</a>
+  <div class="decoracion">✿ ♡ ✧</div>
+</section>
+
+<section id="sobre-mi">
+ <div class="contenedor">
+  <h2 class="section-title">¿Quién soy?</h2><p class="section-subtitle">Un poquito sobre mi historia y personalidad.</p>
+  <div class="sobre-mi">
+   <div class="card animar"><h3>💜 Mi historia</h3><p>Soy una persona muy alegre, creativa y sociable. Me encanta hablar, compartir con los demás y comprender lo que sienten las personas que me rodean. Desde muy pequeña he tenido una visión de mi futuro y trabajo para alcanzar todo aquello que deseo. Me considero amigable, empática y una persona con grandes sueños.</p></div>
+   <div class="card animar"><h3>🌷 Mis datos personales</h3><div class="datos">
+    <div class="dato"><strong>Nombre</strong>Ana Lucía Pachón Claros</div><div class="dato"><strong>Edad</strong>15 años</div>
+    <div class="dato"><strong>Nacimiento</strong>30 de julio de 2011</div><div class="dato"><strong>Lugar de nacimiento</strong>Cartagena del Chairá</div>
+    <div class="dato"><strong>Residencia</strong>Cartagena del Chairá</div><div class="dato"><strong>País</strong>Colombia</div>
+   </div></div>
+  </div>
+ </div>
+</section>
+
+<section id="formacion" style="background:#f0e7fa">
+ <div class="contenedor"><h2 class="section-title">Mi formación académica</h2><p class="section-subtitle">Cada aprendizaje construye mi futuro.</p>
+  <div class="grid">
+   <div class="card animar"><div class="icono">🎓</div><h3>Mi colegio</h3><p>Actualmente estudio en la Institución Educativa El Chairá José María Córdoba, donde curso el grado 11-01.</p></div>
+   <div class="card animar"><div class="icono">📚</div><h3>Mi formación con el SENA</h3><p>He realizado formación relacionada con la contabilización financiera en el Servicio Nacional de Aprendizaje (SENA).</p></div>
+   <div class="card animar"><div class="icono">🧬</div><h3>Mi materia favorita</h3><p>La biología es una de las áreas que más me gustan, porque me permite conocer y comprender la vida y los seres vivos.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="habilidades">
+ <div class="contenedor"><h2 class="section-title">Mis cualidades y habilidades</h2><p class="section-subtitle">Lo que me identifica y me hace crecer.</p>
+  <div class="grid">
+   <div class="card animar"><div class="icono">😊</div><h3>Sociabilidad</h3><p>Me gusta conocer personas, conversar y compartir momentos con los demás.</p></div>
+   <div class="card animar"><div class="icono">🎤</div><h3>Expresión</h3><p>Tengo facilidad para expresarme, comunicar mis ideas y hablar con otras personas.</p></div>
+   <div class="card animar"><div class="icono">💃</div><h3>Baile</h3><p>Disfruto bailar y expresar mi creatividad a través del movimiento.</p></div>
+   <div class="card animar"><div class="icono">💗</div><h3>Empatía</h3><p>Me gusta comprender a los demás y reconocer sus sentimientos.</p></div>
+   <div class="card animar"><div class="icono">🎨</div><h3>Creatividad</h3><p>Me gusta imaginar, crear y encontrar nuevas formas de expresar mis ideas.</p></div>
+   <div class="card animar"><div class="icono">🌸</div><h3>Mi pasatiempo</h3><p>Bailar es una de las actividades que más disfruto en mi tiempo libre.</p></div>
+  </div>
+  <div class="card animar" style="margin-top:25px"><h3>🌱 Algo que quiero mejorar</h3><p>Quiero fortalecer mi motivación y constancia, aprender a mantener el interés en mis actividades y dar siempre lo mejor de mí.</p></div>
+ </div>
+</section>
+
+<section id="logros" style="background:#f0e7fa">
+ <div class="contenedor"><h2 class="section-title">Mis logros y experiencias</h2><p class="section-subtitle">Pequeños y grandes momentos que forman parte de mi camino.</p>
+  <div class="card animar" style="margin-bottom:25px"><h3>🏆 Mis reconocimientos</h3>
+   <details class="acordeon"><summary>Mi reconocimiento en primaria</summary><div class="contenido">Durante mi etapa de primaria recibí un diploma, un recuerdo importante de mi esfuerzo y dedicación.</div></details>
+   <details class="acordeon"><summary>Un paso más en mi educación</summary><div class="contenido">Fui promovida del grado octavo al grado noveno, un logro que hace parte de mi trayectoria académica.</div></details>
+   <details class="acordeon"><summary>Actividades grupales y liderazgo</summary><div class="contenido">He participado en diferentes actividades grupales y espacios de liderazgo que me han ayudado a desarrollar mis habilidades sociales y personales.</div></details>
+  </div>
+  <div class="card animar"><h3>🐬 Una experiencia inolvidable</h3><p>Uno de los momentos que recuerdo con mucho cariño fue mi viaje a Santa Marta, donde tuve la oportunidad de conocer y observar delfines. Fue una experiencia muy especial que quedó guardada en mi memoria.</p></div>
+ </div>
+</section>
+
+<section id="suenos">
+ <div class="contenedor"><h2 class="section-title">Mis sueños y aspiraciones</h2><p class="section-subtitle">El futuro que quiero construir.</p>
+  <div class="card animar" style="text-align:center"><div class="icono">🐾</div><h3>Mi gran sueño: Medicina Veterinaria y Zootecnia</h3><p>Mi sueño es estudiar Medicina Veterinaria y Zootecnia, convertirme en una gran profesional y construir una empresa propia. Quiero dedicarme a una profesión que me permita trabajar por el bienestar de los animales, crecer personal y profesionalmente y cumplir todas las metas que me he propuesto.</p></div>
+  <div class="grid" style="margin-top:25px">
+   <div class="card animar"><div class="icono">👨‍👩‍👧</div><h3>Mi familia</h3><p>Mi familia es una de mis mayores motivaciones para seguir adelante.</p></div>
+   <div class="card animar"><div class="icono">🫶</div><h3>Mis amigos</h3><p>Mis amigos también son parte importante de mi motivación y de mi vida.</p></div>
+   <div class="card animar"><div class="icono">🌟</div><h3>Mi futuro</h3><p>Quiero ser una mujer profesional, independiente y orgullosa de todo lo que logre.</p></div>
+  </div>
+ </div>
+</section>
+
+<section style="padding-top:20px"><div class="contenedor"><div class="frase animar">"Los sueños no tienen límites cuando existe la voluntad de luchar por ellos."<small>— Ana Lucía Pachón Claros 💜</small></div></div></section>
+
+<footer><h3>Ana Lucía Pachón Claros</h3><p>Mi portafolio personal · 2026</p><p>Cartagena del Chairá, Caquetá, Colombia</p><p style="margin-top:12px">Hecho con 💜 y muchos sueños.</p></footer>
+
+<script>
+const elementos=document.querySelectorAll('.animar');
+const observador=new IntersectionObserver((entradas)=>{
+ entradas.forEach(entrada=>{if(entrada.isIntersecting)entrada.target.classList.add('visible')});
+},{threshold:0.12});
+elementos.forEach(elemento=>observador.observe(elemento));
+document.querySelectorAll('nav a').forEach(enlace=>{
+ enlace.addEventListener('click',function(){
+  document.querySelectorAll('nav a').forEach(a=>a.style.color='');
+  this.style.color='#7545a5';
+ });
+});
+</script>
+</body>
+</html>
